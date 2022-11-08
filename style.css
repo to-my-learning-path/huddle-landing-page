@@ -54,7 +54,7 @@ body {
   font-family: var(--ff-body);
   color: white;
   background-color: var(--violet);
-  background-image: url(/images/bg-mobile.svg);
+  background-image: url(./images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -141,7 +141,7 @@ header a img {
 
 @media screen and (min-width: 768px) {
   body {
-    background-image: url(/images/bg-desktop.svg);
+    background-image: url(./images/bg-desktop.svg);
   }
 
   .hero {
@@ -150,8 +150,20 @@ header a img {
     column-gap: 2rem;
   }
 
+  header a img {
+    max-width: 15rem;
+  }
+
   .hero__content {
     text-align: left;
+  }
+
+  .hero__content h1 {
+    font-size: 3rem;
+  }
+
+  .hero__content p {
+    font-size: 1.1rem;
   }
 
   .hero__content a {
